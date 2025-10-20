@@ -1,0 +1,119 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  flex: 1;
+}
+
+.contacts-page {
+  background-image: url("/assets/img/sfondo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+.contacts-page #contact {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  text-align: center;
+  color: black;
+}
+.contacts-page #contact h1 {
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-family: "Playfair", serif;
+  margin-bottom: 2rem;
+  color: white;
+}
+.contacts-page #contact form.contact-form {
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.contacts-page #contact form.contact-form input,
+.contacts-page #contact form.contact-form textarea {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.858);
+  color: black;
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  font-family: "Roboto", sans-serif;
+}
+.contacts-page #contact form.contact-form input::-moz-placeholder, .contacts-page #contact form.contact-form textarea::-moz-placeholder {
+  color: black;
+}
+.contacts-page #contact form.contact-form input::placeholder,
+.contacts-page #contact form.contact-form textarea::placeholder {
+  color: black;
+}
+.contacts-page #contact form.contact-form textarea {
+  resize: none;
+  min-height: 150px;
+}
+.contacts-page #contact form.contact-form button {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 1rem;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.contacts-page #contact form.contact-form button:hover {
+  background-color: rgb(179, 0, 255);
+  color: black;
+}
+.contacts-page .contact-info {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: "Roboto", sans-serif;
+  color: white;
+}
+.contacts-page .contact-info p {
+  margin-bottom: 1rem;
+}
+.contacts-page .contact-info .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.contacts-page .contact-info a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+.contacts-page .contact-info a:hover {
+  color: #0d6efd;
+}
+.contacts-page footer {
+  background-color: #000;
+  padding: 20px;
+  color: white;
+  justify-content: center;
+}/*# sourceMappingURL=contacts.css.map */
