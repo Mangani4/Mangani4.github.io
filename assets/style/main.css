@@ -1,0 +1,450 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  flex: 1;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  flex: 1;
+}
+
+.home-page {
+  background-image: url("/assets/img/sfondo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+.home-page .container {
+  display: flex;
+  justify-content: center;
+}
+.home-page .bio-section {
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+  color: white;
+  margin-top: 15vh;
+  background-color: rgba(0, 0, 0, 0.7529411765);
+}
+.home-page .bio-section h1 {
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-family: "Playfair", serif;
+  color: white;
+  margin-bottom: 1rem;
+}
+.home-page .bio-section p {
+  font-family: "Roboto", sans-serif;
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6rem;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .home-page .bio-section {
+    margin-top: 20vh;
+  }
+}
+@media (min-width: 1200px) {
+  .home-page .bio-section {
+    margin-top: 25vh;
+  }
+}
+footer {
+  background-color: #000;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  flex: 1;
+}
+
+.portfolio-page {
+  background-image: url("/assets/img/sfondo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+.portfolio-page h1 {
+  color: white;
+  font-family: "Playfair", serif;
+  font-size: clamp(2rem, 5vw, 4rem);
+  margin-bottom: 2rem;
+}
+.portfolio-page .projects-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  justify-items: center;
+}
+@media (min-width: 768px) {
+  .portfolio-page .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 992px) {
+  .portfolio-page .projects-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.portfolio-page .project-card {
+  background-color: black;
+  border-radius: 10px;
+  padding: 1.25rem;
+  max-width: 380px;
+  text-align: center;
+  place-items: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 10px rgba(179, 0, 255, 0.4), 0 0 20px rgba(179, 0, 255, 0.2);
+}
+.portfolio-page .project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px rgba(179, 0, 255, 0.8), 0 0 40px rgba(255, 0, 255, 0.6);
+}
+.portfolio-page .project-card .project-logo {
+  width: 120px;
+  height: auto;
+  margin: 0 auto 0.75rem;
+}
+.portfolio-page .project-card .project-title {
+  font-family: "Playfair", serif;
+  font-size: clamp(2rem, 5vw, 4rem);
+  margin-bottom: 0.5rem;
+  color: white;
+}
+.portfolio-page .project-card .project-description {
+  font-family: "Roboto", sans-serif;
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  color: white;
+}
+
+footer {
+  background-color: #000;
+  padding: 20px;
+  color: white;
+  justify-content: center;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  flex: 1;
+}
+
+.cv-page .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.cv-page .sidebar {
+  width: 25%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.cv-page .sidebar .header {
+  text-align: center;
+}
+.cv-page .sidebar .header .name {
+  font-size: 2rem;
+  font-weight: bold;
+  color: black;
+}
+.cv-page .sidebar .header .contact-info {
+  font-size: 1rem;
+  color: black;
+  margin-top: 5px;
+}
+.cv-page .sidebar section {
+  margin-top: 20px;
+}
+.cv-page .sidebar section h2 {
+  color: #0d6efd;
+  font-size: 2rem;
+  font-family: "Playfair", serif;
+}
+.cv-page .sidebar section h3 {
+  color: black;
+  font-size: 1.2rem;
+  margin-top: 5px;
+}
+.cv-page .sidebar section a {
+  color: black;
+  text-decoration: none;
+}
+.cv-page .sidebar section a:hover {
+  color: #0d6efd;
+}
+.cv-page .main-content {
+  width: 65%;
+  padding-left: 20px;
+}
+.cv-page .main-content section {
+  margin-top: 30px;
+}
+.cv-page .main-content section h2 {
+  color: #0d6efd;
+  font-size: 2rem;
+  font-family: "Playfair", serif;
+}
+.cv-page .main-content section p {
+  color: black;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  margin-top: 10px;
+}
+.cv-page .main-content section .job, .cv-page .main-content section .school, .cv-page .main-content section .volontario {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 576px) {
+  .cv-page .container {
+    padding: 5px;
+  }
+  .cv-page .sidebar,
+  .cv-page .main-content {
+    padding: 10px;
+  }
+  .cv-page .header .name {
+    font-size: 1.3rem;
+  }
+  .cv-page .header .contact-info {
+    font-size: 0.8rem;
+  }
+  .cv-page .main-content h2 {
+    font-size: 1.6rem;
+  }
+  .cv-page .main-content p {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 768px) {
+  .cv-page .container {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  .cv-page .sidebar,
+  .cv-page .main-content {
+    width: 100%;
+    padding: 15px;
+    margin: 0 auto;
+  }
+  .cv-page .sidebar {
+    margin-bottom: 20px;
+  }
+  .cv-page .header .name {
+    font-size: 1.5rem;
+  }
+  .cv-page .header .contact-info {
+    font-size: 0.9rem;
+  }
+  .cv-page .main-content section {
+    margin-top: 20px;
+  }
+  .cv-page .main-content h2 {
+    font-size: 1.8rem;
+  }
+  .cv-page .main-content p {
+    font-size: 0.95rem;
+  }
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  flex: 1;
+}
+
+.contacts-page {
+  background-image: url("/assets/img/sfondo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+.contacts-page #contact {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  text-align: center;
+  color: black;
+}
+.contacts-page #contact h1 {
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-family: "Playfair", serif;
+  margin-bottom: 2rem;
+  color: white;
+}
+.contacts-page #contact form.contact-form {
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.contacts-page #contact form.contact-form input,
+.contacts-page #contact form.contact-form textarea {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.858);
+  color: black;
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  font-family: "Roboto", sans-serif;
+}
+.contacts-page #contact form.contact-form input::-moz-placeholder, .contacts-page #contact form.contact-form textarea::-moz-placeholder {
+  color: black;
+}
+.contacts-page #contact form.contact-form input::placeholder,
+.contacts-page #contact form.contact-form textarea::placeholder {
+  color: black;
+}
+.contacts-page #contact form.contact-form textarea {
+  resize: none;
+  min-height: 150px;
+}
+.contacts-page #contact form.contact-form button {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 1rem;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.contacts-page #contact form.contact-form button:hover {
+  background-color: rgb(179, 0, 255);
+  color: black;
+}
+.contacts-page .contact-info {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: "Roboto", sans-serif;
+  color: white;
+}
+.contacts-page .contact-info p {
+  margin-bottom: 1rem;
+}
+.contacts-page .contact-info .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.contacts-page .contact-info a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+.contacts-page .contact-info a:hover {
+  color: #0d6efd;
+}
+.contacts-page footer {
+  background-color: #000;
+  padding: 20px;
+  color: white;
+  justify-content: center;
+}/*# sourceMappingURL=main.css.map */
